@@ -1,4 +1,4 @@
-img{
+/* img{
     vertical-align: middle;
 }
 .box{
@@ -30,4 +30,20 @@ img{
 
 .desc{
     font-weight: 600;
+} */
+
+.movies__list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.movies__item {
+    margin: 0 auto;
+}
+
+.movies__card {
+    width: 18rem;
 }

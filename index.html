@@ -1,112 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Movies catalog</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>A collection of movies</title>
 </head>
 <body>
-    <div class="container">
-      <h2 class="heading text-center">Movies catalog</h2>
-      <div class="row align-items-start">
-        <div class="col col-4">
-          <div class="input-group  mb-3 p-0">
-            <input type="text" class="form-control " placeholder="ave" aria-label="Dollar amount (with dot and two decimal places)">
-          </div>
-          <div class="input-group  mb-3 p-0">
-            <input type="text" class="form-control" placeholder="5" aria-label="Dollar amount (with dot and two decimal places)">
-          </div>
-          <select class="form-select col mb-3" aria-label="Default select example">
-            <option selected>All</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <select class="form-select  col mb-3" aria-label="Default select example">
-            <option selected>Rating (high to low)</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <button type="submit" class="btn btn-primary mb-3 w-100">Search</button>
-          <h3 class="heading">Bookmarked movies</h3>
-          <ul class="list-group ">
-            <li class="list-group-item">
-              <p class="desc  mb-3 mt-2">Avengers:Infinity War</p>
-              <button type="submit" class="btn btn-danger ">Remove</button>
-            </li>
-            <li class="list-group-item">
-              <p class="desc  mb-3 mt-2">The Avengers</p>
-           <button type="submit" class="btn btn-danger ">Remove</button>
-            </li>
-            <li class="list-group-item">
-              <p class="desc  mb-3 mt-2">12 Years a Slave</p>
-         <button type="submit" class="btn btn-danger ">Remove</button>
-            </li>
-          </ul>
-     </div>
-     <div class="col col-8">
-       <p class="desc m-0">Search result:39</p>
-       <div class="alert alert-primary " role="alert">
-        Use the form on the left to search for a movie
-      </div>
-      <div class="box d-flex">
-        <div class="card kards" style="width: 18rem;">
-          <img src="./images/maxresdefault.jpg" class="card-img-top img" alt="maxresdefault">
-          <div class="card-body">
-            <h5 class="card-title">Avengers:Infinity War</h5>
-            <div class="calendar d-flex mt-2">
-              <img class="imgcalendar " src="./images/calendar-icon.webp" alt="kalendar icon" width="30" height="30">
-              <p class="desc p-0 m-0">2018</p>
-            </div>
-            <div class="star d-flex mt-3 mb-4">
-              <img class="star-img " src="./images/Star_icon.png" alt="star icon" width="30" height="30">
-              <p class="star-desc p-0 m-0">8.7</p>
-            </div>
-           <div class="button d-flex">
-            <button type="button" class="btn btn-outline-primary ">Watch trailer</button>
-            <button type="button" class="btn btn-outline-warning">More info</button>
+   <header>
+     <h1 class="text-center text-primary py-3">Movies Catalog</h1>
+   </header>
+  <main class="site-main">
+    <section class="movies">
+      <div class="container">
+         <p class="text-white bg-info d-inline-block p-2 rounded"> Search Result: <span class="movies__result"> 0</span></p>
 
-            <button type="button" class="btn btn-outline-success">Bookmark</button>
-           </div>
-          </div>
-        </div>
-        <div class="card kards" style="width:18rem;">
-          <img src="./images/images.jpg" class="card-img-top img" alt="maxresdefault">
-          <div class="card-body">
-            <h5 class="card-title">The Avengers</h5>
-            <div class="calendar d-flex mt-2">
-              <img class="imgcalendar" src="./images/calendar-icon.webp" alt="kalendar icon" width="30" height="30">
-              <p class="desc p-0 m-0">2012</p>
-            </div>
-            <div class="star d-flex mt-3 mb-4">
-              <img  class="star-img " src="./images/Star_icon.png" alt="star icon" width="30" height="30">
-              <p class="star-desc p-0 m-0">8.1</p>
-            </div>
-            <div class="button d-flex">
-              <button type="button" class="btn btn-outline-primary ">Watch trailer</button>
-            <button type="button" class="btn btn-outline-warning">More info</button>
-            <button type="button" class="btn btn-outline-success">Bookmark</button>
-            </div>
-          </div>
+         <ul class="movies__list m-0 list-none d-flex">
+
+      </ul>
       </div>
-      </div>
-     <div class="pagenation ">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination mt-5  justify-content-center">
-          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-        </ul>
-      </nav>
-     </div>
-     </div>
-    </div>
-    </div>
-<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    </section>
+  </main>
+  <script src="./js/movies-new.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
