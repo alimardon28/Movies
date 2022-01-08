@@ -37,7 +37,7 @@ for(let movie of movies){
     newCardRating.textContent = movie.imdbRating;
     // newCardText.textContent = movie.summary;
     newCardLanguage.textContent = movie.language;
-    newLinkMovies.textContent = "Go to the movies";
+    newLinkMovies.textContent = "Click to view";
 
 
     elList.appendChild(newItem);
